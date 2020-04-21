@@ -1,0 +1,9 @@
+#!name= pixiv
+#!desc= pixiv premium
+#!system=ios
+
+[MITM]
+hostname = %APPEND% *.pixiv.net
+
+[Script]
+http-response https://oauth.secure.pixiv.net/auth/token requires-body=1,max-size=0,script-path=https://ruleset.dev/pixiv_premium,script-update-interval=86400
