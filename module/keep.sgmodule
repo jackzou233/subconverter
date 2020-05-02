@@ -1,0 +1,9 @@
+#!name= keep
+#!desc= Keep app unlock private lessons and action libraries
+#!system=ios
+
+[MITM]
+hostname = %APPEND% api.gotokeep.com
+
+[Script]
+http-response https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js
