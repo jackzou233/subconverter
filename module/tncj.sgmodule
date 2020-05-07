@@ -1,3 +1,7 @@
+#!name= tncj
+#!desc= tncj
+#!system=ios
+
 [MITM]
 hostname = %APPEND% tncj.hortorgames.com
 
